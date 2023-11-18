@@ -22,10 +22,15 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
     />
-    <style>table th:nth-child(2),
-        
+    <style>
+    table th:nth-child(2)
         table tfoot td:nth-child(2) {
-            border: 2px solid #FCAF02;}</style>
+            border: 2px solid #FCAF02;}
+            table td,
+    table th {
+        text-align: center;
+    }
+            </style>
   </head>
   <body style="background: #000">
     <header>
@@ -59,10 +64,10 @@
                 line-height: normal;
               "
             >
-              <li class="me-5">Home</li>
-              <li class="me-5">About Us</li>
-              <li class="me-5">Contact us</li>
-              <li>Login</li>
+              <a href="#" style="text-decoration: none;color: #000;"><li class="me-5">Home</li></a>
+              <a href="#" style="text-decoration: none;color: #000;"><li class="me-5">About Us</li></a>
+              <a href="#" style="text-decoration: none;color: #000;"><li class="me-5">Contact us</li></a>
+              <a href="#" style="text-decoration: none;color: #000;"><li>Login</li></a>
             </ul>
           </div>
         </div>
@@ -193,6 +198,7 @@
             width: 33.5em;
             background-color: #000;
             border-color: #fcaf02;
+            color: #FCAF02;
             border-radius: 2.5em;
             margin-left: 8.5em;
           "
@@ -216,55 +222,68 @@ line-height: normal;margin;"
       </button>
     </div>
     <hr>
-    <div class="d-flex justify-content-center">
-        <table style="border:2px solid #FCAF02; width:80em;margin-right:22em;padding:4em;">
-            <thead style="border:2px solid #FCAF02;padding:6em;">
-            <tr style="color: #FCAF02;padding:3em;margin:3em;border:2px solid #FCAF02;padding:30px;">
-                <td style="border:1px solid #FCAF02;padding:10px;">SNo</td>
-                <td > Startup Nmae</td>
-                <td style="border:1px solid #FCAF02;">Startup Description</td>
+    <div class="d-flex justify-content-center pb-5">
+        <table style="border:2px solid #FCAF02;margin-right:22em;padding:2em;margin-top:4em;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left:17em;
+        width:150em;
+        ">
+            <thead style="border:2px solid #FCAF02;padding:3em;padding-right:100em;">
+            <tr style="color: #FCAF02;padding:3em;margin:3em;border:2px solid #FCAF02;padding-right:30em;">
+                <td style="border:1px solid #FCAF02;padding:50px; width:10em;">SNo</td>
+                <td style="padding-inline:5em; white-space:nowrap;text-align: center;"> Startup Name</td>
+                <td style="border:1px solid #FCAF02;padding-right:10em;padding-left:10em;white-space:nowrap;">Startup Desciption</td>
             </tr>
             </thead>
             <tbody >
             <tr style="color: #FCAF02;">
-                <td style="padding:1em;">1</td>
-                <td>WowIndia</td>
-                <td>Startup with WOW  ideas</td>
+                <td style="padding:1em;border-right:1px solid #FCAF02;">1</td>
+                <td style="width:30em;">WowIndia</td>
+                <td style="border-left:1px solid #FCAF02;">Startup with WOW  ideas</td>
             </tr>
             <tr style="color: #FCAF02;">
-                <td style="padding:1em;">2</td>
+                <td style="padding:1em;border-right:1px solid #FCAF02;">2</td>
                 <td>Lorum Ipsum</td>
-                <td>Startup Description</td>
+                <td style="border-left:1px solid #FCAF02;">Startup Description</td>
             </tr>
             <tr style="color: #FCAF02;">
-                <td style="padding: 1em;"></td>
+                <td style="padding: 1em;border-right:1px solid #FCAF02;">3</td>
                 <td>Lorum Ipsum</td>
-                <td>Startup Description</td>
+                <td style="border-left:1px solid #FCAF02;width:110em;margin-right:60em;">Startup Description</td>
             </tr>
             <tr style="color: #FCAF02;">
-                <td style="padding: 1em;">4</td>
+                <td style="padding: 1em;border-right:1px solid #FCAF02;">4</td>
                 <td>Lorum Ipsum</td>
-                <td>Startup Description</td>
+                <td style="border-left:1px solid #FCAF02;">Startup Description</td>
             </tr>
             <tr style="color: #FCAF02;">
-                <td style="padding: 1em;">5</td>
+                <td style="padding: 1em;border-right:1px solid #FCAF02;">5</td>
                 <td>Lorum Ipsum</td>
-                <td>Startup Description</td>
+                <td style="border-left:1px solid #FCAF02;">Startup Description</td>
             </tr>
             <tr style="color: #FCAF02;">
-                <td style="padding: 1em;">6</td>
+                <td style="padding: 1em;border-right:1px solid #FCAF02;">6</td>
                 <td>Lorum Ipsum</td>
-                <td>Startup Description</td>
+                <td style="border-left: 1px solid#FCAF02;">Startup Description</td>
             </tr>
             </tbody>
             <tfoot>
             <tr style="border: 2px solid#FCAF02;background: #FCAF02;">
-                <td style="padding: 1em;background: #FCAF02;">00.</td>
-                <td styel="background: #FCAF02;">Final Footer</td>
-                <td styel="background: #FCAF02;">Lorem Ipsum Text</td>
+                <td style="border-right:1px solid #000; padding:1em;">00.</td>
+                <td style="background: #FCAF02;">Final Footer</td>
+                <td style="border-left:1px solid#000">Lorem Ipsum Text</td>
             </tr>
             </tfoot>
         </table>
+        <hr>
+        <hr>
+        <hr>
     </div>
+    <hr>
+    <hr>
   </body>
 </html>
